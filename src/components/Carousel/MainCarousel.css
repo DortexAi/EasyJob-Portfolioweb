@@ -1,0 +1,20 @@
+.countSelectorSection,
+.autoCheck {
+  margin: 1rem;
+  display: inline-block;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+legend {
+  text-align: center;
+}
