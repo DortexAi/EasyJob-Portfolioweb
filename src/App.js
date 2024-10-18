@@ -5,19 +5,16 @@ import "slick-carousel/slick/slick-theme.css";
 import Carousel from './components/Carousel/Carousel';
 import Header from './components/header/Header';
 import MainCarousel from './components/Carousel/MainCarousel';
+import Course from './components/course/Course';
 
 
 function App() {
   return (
     <div className="App">
      <Navbar/>
-     {/* <Navbar /> */}
-     
-      {/* <header className="App-header">
-        
-      </header> */}
-      {/* <Header/> */}
+      <MainCarousel />  
       <Carousel/>
+      <Course />
     <Footer />
     </div>
   );
