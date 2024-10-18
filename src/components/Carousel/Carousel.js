@@ -84,9 +84,6 @@ const Carousel = () => {
       <h2>Responsive Carousel</h2>
       <Slider {...settings}>
         <div className=''>
-          
-
-
           <img src={temp2} alt="Slide 1" height={400} width={400} />
         </div>
         <div>
