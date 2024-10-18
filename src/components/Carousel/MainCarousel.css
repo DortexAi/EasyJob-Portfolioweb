@@ -1,20 +1,26 @@
-.countSelectorSection,
-.autoCheck {
-  margin: 1rem;
-  display: inline-block;
-}
 
-input[type="checkbox"] {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
 
-.slideshow-container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-legend {
-  text-align: center;
-}
+.carousel-container {
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+  }
+  
+  .carousel .carousel-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: fill;
+  }
+  
+  .carousel .legend {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+  }
+  

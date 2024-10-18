@@ -129,7 +129,7 @@ export default function PrimarySearchAppBar() {
       </MenuItem>
       <MenuItem>
         <Stack spacing={2} direction="row">
-          <Button variant="contained">Login</Button>
+          <Button variant="contained">SignUp</Button>
         </Stack>
       </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
@@ -157,7 +157,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            EasyJob
           </Typography>
 
           <Box sx={{ flexGrow: 1 }} />
@@ -169,7 +169,7 @@ export default function PrimarySearchAppBar() {
             </MenuItem>
             <MenuItem>
               <Stack spacing={2} direction="row">
-                <Button variant="contained">Login</Button>
+                <Button variant="contained">SignUp</Button>
               </Stack>
             </MenuItem>
             <IconButton

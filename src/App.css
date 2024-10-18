@@ -36,9 +36,9 @@
     transform: rotate(360deg);
   }
 }
-.slick-prev, .slick-next {
-  display: block !important; /* Ensure the buttons are visible */
-  background: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better visibility */
+/* .slick-prev, .slick-next {
+  display: block !important; 
+  background: rgba(0, 0, 0, 0.5); 
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -46,6 +46,6 @@
 }
 
 .slick-prev:before, .slick-next:before {
-  color: white; /* Make the arrow icon white */
+  color: white; 
   font-size: 20px;
-}
+} */
