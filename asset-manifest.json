@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2cd44b63.css",
+    "main.js": "/static/js/main.9b93fdfb.js",
+    "static/js/453.7ade0259.chunk.js": "/static/js/453.7ade0259.chunk.js",
+    "static/media/backimage1.jpg": "/static/media/backimage1.cd1920dc0d32d72cd695.jpg",
+    "static/media/backimage2.jpg": "/static/media/backimage2.cd1920dc0d32d72cd695.jpg",
+    "static/media/college-placement-card.png": "/static/media/college-placement-card.e882aa1ff03cf10917f1.png",
+    "static/media/job-card.png": "/static/media/job-card.9a6d98ac5b15baffd2ed.png",
+    "static/media/fr-card-1.png": "/static/media/fr-card-1.c19cf2e014886dbdf95c.png",
+    "static/media/training-card-1.png": "/static/media/training-card-1.265d115662b6be926e0c.png",
+    "static/media/resume-builder-card.png": "/static/media/resume-builder-card.bfd6a36c665fd112add8.png",
+    "static/media/logo_EasyJob.png": "/static/media/logo_EasyJob.54342ba07ec6447ceef2.png",
+    "static/media/EasyJob_logo.jpg": "/static/media/EasyJob_logo.ce5706b5121df0834911.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.2cd44b63.css.map": "/static/css/main.2cd44b63.css.map",
+    "main.9b93fdfb.js.map": "/static/js/main.9b93fdfb.js.map",
+    "453.7ade0259.chunk.js.map": "/static/js/453.7ade0259.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cd44b63.css",
+    "static/js/main.9b93fdfb.js"
+  ]
+}
