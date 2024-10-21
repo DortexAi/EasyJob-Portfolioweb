@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import temp2 from '../../assets/images/temp2.jpeg';
+import temp2 from '../../assets/images/logo_EasyJob.png';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -44,9 +44,11 @@ const Carousel = () => {
   const settings = {
     dots: true,            
     infinite: true,          
-    speed: 500,              
-    slidesToShow: 3,         
-    slidesToScroll: 1,       
+    speed: 100,              
+    slidesToShow: 3,
+    autoPlay: true,        
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,       
     nextArrow: <NextArrow />,  
     prevArrow: <PrevArrow />,  
     responsive: [            
