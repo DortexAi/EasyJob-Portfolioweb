@@ -133,7 +133,7 @@ function Course() {
         <div className='button-div' >
         <Stack spacing={2} direction="row" >   
         <Button variant="contained" sx={{backgroundColor:'#58a8dd'}}>Register For Free</Button>
-        <Button variant="contained"  sx={{backgroundColor:'#58a8dd'}}>Exlore Course</Button>
+        <Button variant="contained"  sx={{backgroundColor:'#58a8dd'}}>Explore Course</Button>
         </Stack>
           {/* <button className='custom-button'>Register For Free</button>
           <button className='custom-button'>Explore Course</button> */}

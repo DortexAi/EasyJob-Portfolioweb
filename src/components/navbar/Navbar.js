@@ -137,7 +137,7 @@ export default function PrimarySearchAppBar() {
             </Stack>
 
             <MenuItem>
-              <Stack spacing={2} direction="row">
+              <Stack spacing={3} direction="row">
                 <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
                   Register Now
                 </Button>
@@ -201,7 +201,7 @@ export default function PrimarySearchAppBar() {
               <AccountCircle />
             </IconButton>
           </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ display: { xs: "flex", md: "none", } }}>
             <IconButton
               size="large"
               aria-label="show more"
