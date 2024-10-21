@@ -83,6 +83,8 @@ import imageThree from '../../assets/job-card.png';
 import imageFour from '../../assets/resume-builder-card.png';
 import imageFive from '../../assets/training-card-1.png';
 import imageSix from '../../assets/college-placement-card.png';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 function Course() {
   const cardsData = [
@@ -128,20 +130,20 @@ function Course() {
           <li><a href="#">Get hands-on experience</a></li>
           <li><a href="#">Join a community of learners</a></li>
         </ul>
-        <div className='button-div'>
-          <button className='custom-button'>Register For Free</button>
-          <button className='custom-button'>Explore Course</button>
+        <div className='button-div' >
+        <Stack spacing={2} direction="row" >   
+        <Button variant="contained" sx={{backgroundColor:'#58a8dd'}}>Register For Free</Button>
+        <Button variant="contained"  sx={{backgroundColor:'#58a8dd'}}>Exlore Course</Button>
+        </Stack>
+          {/* <button className='custom-button'>Register For Free</button>
+          <button className='custom-button'>Explore Course</button> */}
         </div>
       </div>
 
       <div className='right-div'>
         {cardsData.map((card, index) => (
-          <div key={index} className="card">
-            <img src={card.imageUrl} alt={card.title} className="card-image" />
-            <h5 className="card-title">{card.title}</h5>
-            <p className="card-description">{card.description}</p>
-          </div>
-        ))}
+            <img src={card.imageUrl} alt={card.title} className="card-image"  />
+          ))}
       </div>
     </section>
   );

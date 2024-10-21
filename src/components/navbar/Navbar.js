@@ -16,34 +16,35 @@ import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import logo from "../../assets/images/logo_EasyJob.png";
+import logo2 from "../../assets/images/EasyJob_logo.jpg";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
-    width: "auto",
-  },
-}));
+// const Search = styled("div")(({ theme }) => ({
+//   position: "relative",
+//   borderRadius: theme.shape.borderRadius,
+//   backgroundColor: alpha(theme.palette.common.white, 0.15),
+//   "&:hover": {
+//     backgroundColor: alpha(theme.palette.common.white, 0.25),
+//   },
+//   marginRight: theme.spacing(2),
+//   marginLeft: 0,
+//   width: "100%",
+//   [theme.breakpoints.up("sm")]: {
+//     marginLeft: theme.spacing(3),
+//     width: "auto",
+//   },
+// }));
 
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
+// const SearchIconWrapper = styled("div")(({ theme }) => ({
+//   padding: theme.spacing(0, 2),
+//   height: "100%",
+//   position: "absolute",
+//   pointerEvents: "none",
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "center",
+// }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
@@ -62,6 +63,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const navoption = [
+    { name: "Home", href:'#' },
+    { name: "About us", href:'#' },
+    { name: "Contact us", href:'#' },
+  ];
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -122,16 +128,21 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <Stack spacing={2} direction="row">
-          <Button variant="contained">Login</Button>
-        </Stack>
-      </MenuItem>
-      <MenuItem>
-        <Stack spacing={2} direction="row">
-          <Button variant="contained">SignUp</Button>
-        </Stack>
-      </MenuItem>
+      <Stack spacing={2} direction="column">
+              {navoption.map((navitem) => (
+                <Button href={navitem.href} sx={{ color: "#58a8dd" }}>
+                  {navitem.name}
+                </Button>
+              ))}
+            </Stack>
+
+            <MenuItem>
+              <Stack spacing={2} direction="row">
+                <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+                  Register Now
+                </Button>
+              </Stack>
+            </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -149,27 +160,33 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ backgroundColor: "#f7f7f7" }}>
         <Toolbar>
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
             EasyJob
-          </Typography>
+          </Typography> */}
+          <img src={logo2} alt="logo2" height={"100px"} width={"100px"} />
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <Stack spacing={2} direction="row">
+              {navoption.map((navitem) => (
+                <Button href={navitem.href} sx={{ color: "#58a8dd" }}>
+                     {navitem.name}
+                </Button>
+              ))}
+            </Stack>
+
             <MenuItem>
               <Stack spacing={2} direction="row">
-                <Button variant="contained">Login</Button>
-              </Stack>
-            </MenuItem>
-            <MenuItem>
-              <Stack spacing={2} direction="row">
-                <Button variant="contained">SignUp</Button>
+                <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+                  Register Now
+                </Button>
               </Stack>
             </MenuItem>
             <IconButton
@@ -191,9 +208,10 @@ export default function PrimarySearchAppBar() {
               aria-controls={mobileMenuId}
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
-              color="inherit"
+              color="#000"
             >
               <MoreIcon />
+              {/* <MenuIcon /> */}
             </IconButton>
           </Box>
         </Toolbar>

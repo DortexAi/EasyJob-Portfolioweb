@@ -1,36 +1,26 @@
-import Footer from './components/footer/Footer';
-import Navbar from './components/navbar/Navbar';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import Carousel from './components/Carousel/Carousel';
-import Header from './components/header/Header';
-import MainCarousel from './components/Carousel/MainCarousel';
-import HowItWorks from './components/Home/howItWork/HowItWork';
-import CourseCard from './components/Home/Courses/Courses';
-import Space from './components/Space';
-import WhyEasyjob from './components/Home/WhyEasyJob/WhyEasyJob';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-     <Navbar/>
-     <MainCarousel/>
-      <section> 
-        <HowItWorks/>
-      </section>
-      <section> 
-      <CourseCard/>
-      </section>
-      
-      
-      {/* <Carousel/> */}
-      <Space height={'30px'}/>
-      <WhyEasyjob/>
-      <Space height={'30px'}/>
-    <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+

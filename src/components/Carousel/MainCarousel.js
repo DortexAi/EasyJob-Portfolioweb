@@ -2,17 +2,18 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // carousel default styles
 import "./MainCarousel.css"; // custom styles
-import temp2 from "../../assets/images/temp2.jpeg";
-
+import backimage1 from "../../assets/backimage1.jpg";
+import backimage2 from "../../assets/backimage2.jpg"
+ 
 const MainCarousel = () => {
   const slides = [
-    { img: temp2, caption: "Caption One" },
-    { img: temp2, caption: "Caption Two" },
-    { img: temp2, caption: "Caption Three" },
-    { img: temp2, caption: "Caption Four" },
-    { img: temp2, caption: "Caption Five" },
-    { img: temp2, caption: "Caption Six" },
-    { img: temp2, caption: "Caption Seven" },
+    { img: backimage1, caption: "Caption One" },
+    { img: backimage2, caption: "Caption Two" },
+    { img: backimage1, caption: "Caption Three" },
+    { img: backimage2, caption: "Caption Four" },
+    { img: backimage1, caption: "Caption Five" },
+    { img: backimage2, caption: "Caption Six" },
+    { img: backimage1, caption: "Caption Seven" },
   ];
 
   return (
