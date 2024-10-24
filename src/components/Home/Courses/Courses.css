@@ -1,32 +1,29 @@
 .course-carousel-container {
-    padding: 50px; /* Adjust padding for cleaner spacing */
+    padding: 10px; /* Adjust padding for cleaner spacing */
+    display: block;
   }
   
   .card {
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;  /* Ensure two cards fit side by side */
-    margin: 10;  /* Center the card */
-    max-width: 450px;  /* Prevent cards from being too wide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 60%;  /* Ensure two cards fit side by side */
+    /* margin: 10 auto;   */
+    max-width: 400px; 
+    margin-left: 10%; 
+    min-height: 550px;
   }
   
   @media (max-width: 768px) {
     .card {
-      width: 100%; /* Full width on mobile */
-      max-width: none; /* Remove the max-width constraint */
-      margin: 10px auto; /* Center and add margin between cards */
+      width: 100%; 
+      max-width: none; 
+      margin: 10px auto; 
     }
   }
-  
-  /* Style the Button */
-  .MuiButton-outlined {
-    margin-top: 15px;
+
    
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
+   */
   /* Keep the curriculum list styling as it is */
   .curriculum-list,
   ul {

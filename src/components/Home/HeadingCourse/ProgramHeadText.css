@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #ffff;
     border-radius: 8px;
     max-width: 1200px;
     margin: auto;
@@ -13,6 +13,7 @@
   .program-content {
     display: flex;
     align-items: center;
+    text-wrap: balance;
   }
   
   .program-icon {
@@ -23,7 +24,7 @@
   
   .program-text h2 {
     font-size: 24px;
-    color: #8a4d76;
+    color: #58a8dd;
     margin: 0;
   }
   
@@ -31,30 +32,17 @@
     margin: 5px 0 0;
     color: #666;
   }
-  
-  .view-programs-btn {
-    background: transparent;
-    border: 2px solid #8a4d76;
-    color: #8a4d76;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .view-programs-btn:hover {
-    background-color: #8a4d76;
-    color: white;
-  }
-  
+ 
   /* Responsive Styling */
   @media (max-width: 768px) {
     .program-container {
       flex-direction: column;
       text-align: center;
+      overflow: hidden;
     }
   
     .program-content {
-      margin-bottom: 20px;
+      margin: 10px;
     }
   }
   
