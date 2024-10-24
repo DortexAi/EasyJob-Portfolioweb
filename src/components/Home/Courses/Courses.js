@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import "./Courses.css";
+import "./courses.css";
 import Button from '@mui/material/Button';
 import { Preview } from "@mui/icons-material";
 
@@ -51,10 +51,17 @@ const CourseCard = () => {
     speed: 500,
     slidesToShow: 2,  // Show 2 slides at a time
     slidesToScroll: 1,
-    
+   
     responsive: [
       {
         breakpoint: 768,
+        settings: {
+          slidesToShow: 1,  // Show only 1 slide on small screens
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,  // Show only 1 slide on small screens
           slidesToScroll: 1,
@@ -97,7 +104,7 @@ const CourseCard = () => {
           </li>
         ))}
       </ul>
-      <Button variant="outlined" sx={{ marginTop: "15px", width: "100%" }}>
+      <Button variant="outlined" sx={{  marginTop: "15px", width: "80%" }}>
         Explore
       </Button>
     </div>

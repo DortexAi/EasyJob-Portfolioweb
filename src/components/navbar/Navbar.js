@@ -20,6 +20,7 @@ import logo2 from "../../assets/images/EasyJob_logo.jpg";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
+
 // const Search = styled("div")(({ theme }) => ({
 //   position: "relative",
 //   borderRadius: theme.shape.borderRadius,
@@ -143,7 +144,7 @@ export default function PrimarySearchAppBar() {
                 </Button>
               </Stack>
             </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
+      {/* <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
           aria-label="account of current user"
@@ -154,7 +155,7 @@ export default function PrimarySearchAppBar() {
           <AccountCircle />
         </IconButton>
         <p>Profile</p>
-      </MenuItem>
+      </MenuItem> */}
     </Menu>
   );
 
@@ -189,7 +190,7 @@ export default function PrimarySearchAppBar() {
                 </Button>
               </Stack>
             </MenuItem>
-            <IconButton
+            {/* <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"
@@ -199,7 +200,7 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none", } }}>
             <IconButton
@@ -210,8 +211,8 @@ export default function PrimarySearchAppBar() {
               onClick={handleMobileMenuOpen}
               color="#000"
             >
-              <MoreIcon />
-              {/* <MenuIcon /> */}
+              {/* <MoreIcon /> */}
+              <MenuIcon sx={{ fontSize: 35, color:'#333333' }} />
             </IconButton>
           </Box>
         </Toolbar>
