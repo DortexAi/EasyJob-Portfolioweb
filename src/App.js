@@ -1,40 +1,42 @@
-import Footer from './components/footer/Footer';
-import Navbar from './components/navbar/Navbar';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import MainCarousel from './components/Carousel/MainCarousel';
-import HowItWorks from './components/Home/howItWork/HowItWork';
-import CourseCard from './components/Home/Courses/Courses';
-import Space from './components/Space';
-import WhyEasyjob from './components/Home/WhyEasyJob/WhyEasyJob';
-import Course from './components/course/Course';
-import Form from './components/Home/Form/Form';
-import ProgramHeadText from './components/Home/HeadingCourse/ProgramHeadText';
+import './App.css'
+
+import Home from "./pages/Home/Home.js";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import AboutUs from './pages/About/About.js';
+import Register from './pages/Register/Register.js';
+import Dashboard from './pages/Dashboard/Dashboard.js';
+
+const router = createBrowserRouter(
+  [
+    {
+      path:"/",
+      element: <Home/> 
+    },
+    {
+      path:"/about",
+      element: <AboutUs/> 
+    },
+    {
+      path:"/register",
+      element: <Register/> 
+    },
+    {
+      path:"/dashboard",
+      element: <Dashboard/> 
+    },
+  ],
+  { basename: "https://NDVashist.github.io/EasyJob-Portfolio" } 
+)
+
 function App() {
   return (
-    <>
-     <Navbar/>
-     <MainCarousel/>
-      <Space height={'30px'}/>
-     <Course/>
-      <section> 
-        <HowItWorks/>
-      </section>
-      <section> 
-        <ProgramHeadText/>
-      <CourseCard/>
-      </section>
-      {/* <CarouselSmall/> */}
-       <Form/>
-      
-      
-    
-      <Space height={'30px'}/>
-      <WhyEasyjob/>
-      <Space height={'30px'}/>
-      <Footer />
-    </>
+    <div>
+       <RouterProvider router={router}/>
+       {/* <Home/> */}
+    </div>
     );
 }
 
 export default App;
+
+//"homepage": "https://NDVashist.github.io/EasyJob-Portfolio",

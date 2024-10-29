@@ -2,7 +2,9 @@
   "name": "easyjob-portfolio",
   "version": "0.1.0",
   "private": true,
+  
   "homepage": "https://NDVashist.github.io/EasyJob-Portfolio",
+
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -19,6 +21,7 @@
     "react-dom": "^18.3.1",
     "react-material-ui-carousel": "^3.4.2",
     "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",

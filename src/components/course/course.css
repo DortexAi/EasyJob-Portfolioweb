@@ -1,6 +1,5 @@
 .course-section {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 2rem;
     padding: 1.5rem 4rem;
     align-items: center;
@@ -80,9 +79,9 @@
   
   .card-image {
     transition: transform 0.3s;
-    /* border-radius: 50%; */
+   
     height: 180px;
-    aspect-ratio: 1/1.5;
+    
     object-fit: cover;
     border-radius: 10px;
     width: 120px;

@@ -61,7 +61,7 @@
     line-height: 1.5;
   }
   
-  /* Responsive styles */
+
   @media screen and (max-width: 1200px) {
     .steps-container {
       justify-content: space-between;
