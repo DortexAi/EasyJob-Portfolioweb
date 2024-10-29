@@ -11,6 +11,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo2 from "../../assets/images/EasyJob_logo.jpg";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 
 // const Search = styled("div")(({ theme }) => ({
@@ -123,8 +124,8 @@ export default function Navbar() {
     >
       <Stack spacing={2} direction="column">
               {navoption.map((navitem ,index) => (
-                <Button key={index} href={navitem.href} sx={{ color: "#58a8dd" }}>
-                  {navitem.name}
+                <Button key={index}  sx={{ color: "#58a8dd" }}>
+                  <Link to={navitem.href}> {navitem.name}</Link>
                 </Button>
               ))}
             </Stack>
@@ -169,8 +170,8 @@ export default function Navbar() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Stack spacing={2} direction="row">
               {navoption.map((navitem) => (
-                <Button href={navitem.href} sx={{ color: "#58a8dd" }}>
-                     {navitem.name}
+                <Button sx={{ color: "#58a8dd" }}>
+                     <Link to={navitem.href}> {navitem.name}</Link>
                 </Button>
               ))}
             </Stack>
