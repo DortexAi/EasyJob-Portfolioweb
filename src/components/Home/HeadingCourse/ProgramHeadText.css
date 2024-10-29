@@ -32,8 +32,6 @@
     margin: 5px 0 0;
     color: #666;
   }
- 
-  /* Responsive Styling */
   @media (max-width: 768px) {
     .program-container {
       flex-direction: column;

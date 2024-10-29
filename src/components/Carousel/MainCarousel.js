@@ -3,17 +3,22 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // carousel default styles
 import "./MainCarousel.css"; // custom styles
 import backimage1 from "../../assets/backimage1.jpg";
-import backimage2 from "../../assets/backimage2.jpg"
+import backimage2 from "../../assets/backimage2.jpg";
+import backimage3 from "../../assets/backimage2.jpg";
+import backimage4 from "../../assets/backimage2.jpg";
+import backimage5 from "../../assets/backimage2.jpg";
+import backimage6 from "../../assets/backimage2.jpg";
+import backimage7 from "../../assets/backimage2.jpg";
  
 const MainCarousel = () => {
   const slides = [
     { img: backimage1, caption: "Caption One" },
     { img: backimage2, caption: "Caption Two" },
-    { img: backimage1, caption: "Caption Three" },
-    { img: backimage2, caption: "Caption Four" },
-    { img: backimage1, caption: "Caption Five" },
-    { img: backimage2, caption: "Caption Six" },
-    { img: backimage1, caption: "Caption Seven" },
+    { img: backimage3, caption: "Caption Three" },
+    { img: backimage4, caption: "Caption Four" },
+    { img: backimage5, caption: "Caption Five" },
+    { img: backimage6, caption: "Caption Six" },
+    { img: backimage7, caption: "Caption Seven" },
   ];
 
   return (

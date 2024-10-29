@@ -4,18 +4,10 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
-import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
-import logo from "../../assets/images/logo_EasyJob.png";
 import logo2 from "../../assets/images/EasyJob_logo.jpg";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -61,13 +53,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const navoption = [
-    { name: "Home", href:'#' },
-    { name: "About us", href:'#' },
-    { name: "Contact us", href:'#' },
+    { name: "Home", href:'/' },
+    { name: "About us", href:'/about' },
+    { name: "Contact us", href:'/dashboard' },
   ];
 
   const isMenuOpen = Boolean(anchorEl);
@@ -130,8 +122,8 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <Stack spacing={2} direction="column">
-              {navoption.map((navitem) => (
-                <Button href={navitem.href} sx={{ color: "#58a8dd" }}>
+              {navoption.map((navitem ,index) => (
+                <Button key={index} href={navitem.href} sx={{ color: "#58a8dd" }}>
                   {navitem.name}
                 </Button>
               ))}
@@ -185,7 +177,7 @@ export default function PrimarySearchAppBar() {
 
             <MenuItem>
               <Stack spacing={2} direction="row">
-                <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+                <Button variant="contained" href="/register" sx={{ backgroundColor: "#58a8dd" }}>
                   Register Now
                 </Button>
               </Stack>

@@ -7,8 +7,8 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 60%;  /* Ensure two cards fit side by side */
-    /* margin: 10 auto;   */
+    width: 60%; 
+   
     max-width: 400px; 
     margin-left: 10%; 
     min-height: 550px;
@@ -23,9 +23,7 @@
   }
 
    
-   */
-  /* Keep the curriculum list styling as it is */
-  .curriculum-list,
+   .curriculum-list,
   ul {
     list-style: none;
     padding: 0;

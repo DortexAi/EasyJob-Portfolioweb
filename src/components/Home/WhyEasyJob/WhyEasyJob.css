@@ -6,7 +6,7 @@
   }
   
   h2, h3 {
-    color: #3D2078; /* Matching the title color from the image */
+    color: #3D2078; 
   }
   
   p {
@@ -36,7 +36,7 @@
   }
   
   .carousel .control-arrow:before {
-    border-top-color: #000; /* Customizing the arrow colors */
+    border-top-color: #000; 
     border-bottom-color: #000;
   }
   
