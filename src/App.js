@@ -1,5 +1,4 @@
 import "./App.css";
-
 import Home from "./pages/Home/Home.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutUs from "./pages/About/About.js";
@@ -14,9 +13,7 @@ const router = createBrowserRouter(
       path: "/",
       element: (
         <>
-          <Navbar/>
-          <Home />
-          <Footer/>
+         <Home />
         </>
       ),
     },
@@ -42,11 +39,11 @@ const router = createBrowserRouter(
       path: "/dashboard",
       element: 
       <>
-        <Navbar/>
         <Dashboard />,
-        <Footer/>
+        
       </>
     },
+   
   ],
   { basename: "/EasyJob-Portfolio" }
 );

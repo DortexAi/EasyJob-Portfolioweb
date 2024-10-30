@@ -60,7 +60,7 @@ export default function Navbar() {
   const navoption = [
     { name: "Home", href:'/' },
     { name: "About us", href:'/about' },
-    { name: "Contact us", href:'/dashboard' },
+    { name: "Contact us", href:'#Contactus' },
   ];
 
   const isMenuOpen = Boolean(anchorEl);
