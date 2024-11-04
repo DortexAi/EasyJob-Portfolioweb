@@ -1,17 +1,15 @@
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
+import { Drawer, Button, Stack, MenuItem, IconButton } from '@mui/material'
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
-import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo2 from "../../assets/images/EasyJob_logo.jpg";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-
+import { Link } from "react-router-dom";
+import './navbar.css'
 
 // const Search = styled("div")(({ theme }) => ({
 //   position: "relative",
@@ -57,10 +55,20 @@ export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const navoption = [
-    { name: "Home", href:'/' },
-    { name: "About us", href:'/about' },
-    { name: "Contact us", href:'/dashboard' },
+    { name: "Home", href: "/" },
+    { name: "About us", href: "/about" },
+    { name: "Contact us", href: "#Contactus" },
   ];
+  const linktextStyles = {
+    color: "#000",
+    textDecoration: "none",
+    fontSize: "15px",
+  };
+  const linkButtonStyles = {
+    color: "#ffffff",
+    textDecoration: "none",
+    fontSize: "15px",
+  };
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -106,49 +114,41 @@ export default function Navbar() {
 
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
+    <Drawer
+      anchor="right" 
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
+      sx={{ alignItems:'center',  display: 'flex',
+        flexDirection: 'column',
+        paddingTop:'5%',
+        alignItems: 'center',   
+        justifyContent: 'center', 
+        height: '100%', }}
     >
-      <Stack spacing={2} direction="column">
-              {navoption.map((navitem ,index) => (
-                <Button key={index} href={navitem.href} sx={{ color: "#58a8dd" }}>
-                  {navitem.name}
-                </Button>
-              ))}
-            </Stack>
-
-            <MenuItem>
-              <Stack spacing={3} direction="row">
-                <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
-                  Register Now
-                </Button>
-              </Stack>
-            </MenuItem>
-      {/* <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem> */}
-    </Menu>
+      <Stack
+        spacing={2}
+        direction="column"
+        sx={{ width: 250, padding: 2 }} 
+      >
+        {navoption.map((navitem, index) => (
+          <Button key={index} sx={{ color: "#58a8dd" }} onClick={handleMobileMenuClose}>
+            <Link to={navitem.href} style={linktextStyles}
+             >{navitem.name}</Link>
+          </Button>
+        ))}
+  
+        <MenuItem>
+          <Stack spacing={2} direction="column" sx={{alignItems:'center', width:250,padding:2,}}>
+            <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+              <Link to="/wantjob" style={linkButtonStyles}>Want a Job</Link>
+            </Button>
+            <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+              <Link to="/wantHire" style={linkButtonStyles}>Want to Hire</Link>
+            </Button>
+          </Stack>
+        </MenuItem>
+      </Stack>
+    </Drawer>
   );
 
   return (
@@ -163,22 +163,34 @@ export default function Navbar() {
           >
             EasyJob
           </Typography> */}
+
+          <Link to={'/'}>
           <img src={logo2} alt="logo2" height={"100px"} width={"100px"} />
+          </Link>
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Stack spacing={2} direction="row">
               {navoption.map((navitem) => (
-                <Button href={navitem.href} sx={{ color: "#58a8dd" }}>
-                     {navitem.name}
+                <Button sx={{ color: "#58a8dd" }}>
+                  <Link to={navitem.href} style={linktextStyles}> {navitem.name}</Link>
                 </Button>
               ))}
             </Stack>
 
-            <MenuItem>
+            <MenuItem
+              sx={{
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
+              }}
+            >
               <Stack spacing={2} direction="row">
-                <Button variant="contained" href="/register" sx={{ backgroundColor: "#58a8dd" }}>
-                  Register Now
+                <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+                  <Link to={'/wantjob'} style={linkButtonStyles}>Want a Job</Link>
+                </Button>
+                <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
+                  <Link to={'/wantHire'} style={linkButtonStyles}>Want to Hire</Link>
                 </Button>
               </Stack>
             </MenuItem>
@@ -194,7 +206,7 @@ export default function Navbar() {
               <AccountCircle />
             </IconButton> */}
           </Box>
-          <Box sx={{ display: { xs: "flex", md: "none", } }}>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="show more"
@@ -204,7 +216,7 @@ export default function Navbar() {
               color="#000"
             >
               {/* <MoreIcon /> */}
-              <MenuIcon sx={{ fontSize: 35, color:'#333333' }} />
+              <MenuIcon sx={{ fontSize: 35, color: "#333333" }} />
             </IconButton>
           </Box>
         </Toolbar>

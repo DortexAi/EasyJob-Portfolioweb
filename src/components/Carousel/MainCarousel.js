@@ -3,12 +3,12 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // carousel default styles
 import "./MainCarousel.css"; // custom styles
 import backimage1 from "../../assets/backimage1.jpg";
-import backimage2 from "../../assets/backimage2.jpg";
-import backimage3 from "../../assets/backimage2.jpg";
-import backimage4 from "../../assets/backimage2.jpg";
+import backimage2 from "../../assets/mainCarouselImg-3.jpg";
+import backimage3 from "../../assets/mainCarouselImg-1.jpg";
+import backimage4 from "../../assets/mainCarouselImg-2.jpg";
 import backimage5 from "../../assets/backimage2.jpg";
-import backimage6 from "../../assets/backimage2.jpg";
-import backimage7 from "../../assets/backimage2.jpg";
+import backimage6 from "../../assets/mainCarouselImg-2.jpg";
+import backimage7 from "../../assets/mainCarouselImg-3.jpg";
  
 const MainCarousel = () => {
   const slides = [

@@ -1,59 +1,94 @@
-import React from 'react';
-import './Footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faTwitter, faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
-
-const Footer = () =>{
-  return(
+import React from "react";
+import "./Footer.css";
+import logo from "../../assets/images/logo_EasyJob.png";
+import FacebookIcon from "@mui/icons-material/Facebook";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmailIcon from "@mui/icons-material/Email";
+import { Link } from "react-router-dom";
+const Footer = () => {
+  const linkButtonStyles = {
+    color: "#000",
+    textDecoration: "none",
+    fontSize: "15px",
+  };
+  return (
     <footer>
-      <div className='footer-container'>
-        <div className='footer-column'>
-          <h3>About Us</h3>
-          <p>Recruitment Marketplace byThe Hiring Company is a unique, all-encompassing platform that revolutionizes recruitment in India.</p>
-          <p>A. BHARAT FUTUREMINDS INNOVATION PRIVATE LIMITED, N-161, Saira Tower, G/F-Gautam Nagar, New Delhi, South Delhi-110049, Delhi</p>
-          <p>T. +91-90350-96659</p>
-          <p>E. teamhr@thehiringcompany.co.in</p>
+      <div id="Contactus" className="footer-container">
+        {/* About Us Section */}
+        <div className="footer-column">
+          <img src={logo} alt="Company Logo" className="footer-logo" />
+          <p>
+            "Share your IDEA and We Will Make It Real.” We ensure the true worth
+            of the valuable time and money you invested in us by delivering the
+            perfect product.
+          </p>
+          <div className="social-links">
+            <Link to="#" style={linkButtonStyles} >
+              <FacebookIcon />
+            </Link>
+            {/* <Link to="#" style={linkButtonStyles}>
+              <LinkedInIcon />
+            </Link> */}
+            <Link to="#"style={linkButtonStyles}>
+              <InstagramIcon />
+            </Link>
+          </div>
         </div>
-        <div className='footer-column'>
-          <h3>Company</h3>
+
+        {/* Important Links Section */}
+        <div className="footer-column">
+          <h3>Important Links</h3>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">FAQ's</a></li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Career</a>
+            </li>
           </ul>
         </div>
-        <div className='footer-column'>
+
+        {/* Services Section */}
+        <div className="footer-column">
           <h3>Services</h3>
           <ul>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Companies</a></li>
-            <li><a href="#">Candidates</a></li>
-            <li><a href="#">Freelance Recuiters</a></li>
+            <li>
+              <a href="#">Innovative AI Solutions</a>
+            </li>
+            <li>
+              <a href="#">Application Development</a>
+            </li>
+            <li>
+              <a href="#">Web Development</a>
+            </li>
+            <li>
+              <a href="#">Digital Marketing</a>
+            </li>
+            <li>
+              <a href="#">UI/UX Design</a>
+            </li>
+            <li>
+              <a href="#">Recruitment Solutions</a>
+            </li>
           </ul>
         </div>
-        <div className='footer-column'>
-         <h3>Support</h3>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Pricing Plan</a></li>
-          </ul>
-        </div>
-        <div className='footer-column'>
-          <h3>Connect</h3>
-          <a href="#" className="social-link"><FontAwesomeIcon className="icon" icon={faLinkedin}/>LinkedIn</a>
-          <a href="#" className="social-link"><FontAwesomeIcon className="icon" icon={faTwitter}/>Twitter</a>
-          <a href="#" className="social-link"><FontAwesomeIcon className="icon" icon={faFacebook}/>Facebook</a>
-          <a href="#" className="social-link"><FontAwesomeIcon className="icon" icon={faInstagram}/>Instagram</a>
-          <a href="#" className="social-link"><FontAwesomeIcon className="icon" icon={faYoutube}/>Youtube</a>
+
+        {/* Get in Touch Section */}
+        <div className="footer-column">
+          <h3>Get in Touch</h3>
+          <a href="#" className="contact-link">
+            <LocationOnIcon />
+            Chandigarh Group of College, Landran Mohali Punjab
+          </a>
+          <a href="#" className="contact-link">
+            <EmailIcon /> info@dortexai.com
+          </a>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;

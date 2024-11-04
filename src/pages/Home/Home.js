@@ -10,7 +10,7 @@ import WhyEasyjob from '../../components/Home/WhyEasyJob/WhyEasyJob';
 import Course from '../../components/course/Course';
 import Form from '../../components/Home/Form/Form';
 import ProgramHeadText from '../../components/Home/HeadingCourse/ProgramHeadText';
-// import AboutUs from '../pages/About/About';
+import CompanyCarousel from '../../components/Carousel/CampanyLogoCarousel';
 
 
 function Home() {
@@ -20,23 +20,21 @@ function Home() {
        <MainCarousel/>
       <Space height={'30px'}/>
         <Course/>
+      <Space height={'30px'}/>
+         <CompanyCarousel/>   
       <section> 
         <HowItWorks/>
       </section>
-      <section> 
+      {/* <section> 
         <ProgramHeadText/>
         <CourseCard/>
-      </section>
-     
+      </section> */}
        <Form/>
-      
-      
-    
       <Space height={'30px'}/>
       <WhyEasyjob/>
       <Space height={'30px'}/>
 
-      {/* <AboutUs/> */}
+   
       <Footer />
     </>
     );
