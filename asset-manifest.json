@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EasyJob-Portfolio/static/css/main.a3ea9d33.css",
-    "main.js": "/EasyJob-Portfolio/static/js/main.2127f10f.js",
+    "main.js": "/EasyJob-Portfolio/static/js/main.a326a071.js",
     "static/js/453.7ade0259.chunk.js": "/EasyJob-Portfolio/static/js/453.7ade0259.chunk.js",
     "static/media/backimage1.jpg": "/EasyJob-Portfolio/static/media/backimage1.cd1920dc0d32d72cd695.jpg",
     "static/media/backimage2.jpg": "/EasyJob-Portfolio/static/media/backimage2.cd1920dc0d32d72cd695.jpg",
@@ -22,11 +22,11 @@
     "static/media/slick.woff": "/EasyJob-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EasyJob-Portfolio/index.html",
     "main.a3ea9d33.css.map": "/EasyJob-Portfolio/static/css/main.a3ea9d33.css.map",
-    "main.2127f10f.js.map": "/EasyJob-Portfolio/static/js/main.2127f10f.js.map",
+    "main.a326a071.js.map": "/EasyJob-Portfolio/static/js/main.a326a071.js.map",
     "453.7ade0259.chunk.js.map": "/EasyJob-Portfolio/static/js/453.7ade0259.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3ea9d33.css",
-    "static/js/main.2127f10f.js"
+    "static/js/main.a326a071.js"
   ]
 }
