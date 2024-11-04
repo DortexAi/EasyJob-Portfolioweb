@@ -29,10 +29,11 @@ const router = createBrowserRouter(
       </>
     },
     {
-      path: "/register",
+      path: "/wantHire",
       element:
       <> 
         <Navbar/>
+        <Space height={60}/>
         <Register />,
         <Footer/>
       </>
@@ -54,7 +55,18 @@ const router = createBrowserRouter(
         <Wantjob/>
         <Footer/>
       </>
-    }
+    },
+    // {
+    //   path:"/register",
+    //   element: 
+    //   <>
+    //     <Navbar/>
+    //      <Space height={50}/>
+    //      <Register/>
+    //     <Footer/>
+       
+    //   </>
+    // }
    
   ],
   { basename: "/EasyJob-Portfolio" }

@@ -143,7 +143,7 @@ export default function Navbar() {
               <Link to="/wantjob" style={linkButtonStyles}>Want a Job</Link>
             </Button>
             <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
-              <Link to="/hire" style={linkButtonStyles}>Want to Hire</Link>
+              <Link to="/wantHire" style={linkButtonStyles}>Want to Hire</Link>
             </Button>
           </Stack>
         </MenuItem>
@@ -190,7 +190,7 @@ export default function Navbar() {
                   <Link to={'/wantjob'} style={linkButtonStyles}>Want a Job</Link>
                 </Button>
                 <Button variant="contained" sx={{ backgroundColor: "#58a8dd" }}>
-                  <Link style={linkButtonStyles}>Want to Hire</Link>
+                  <Link to={'/wantHire'} style={linkButtonStyles}>Want to Hire</Link>
                 </Button>
               </Stack>
             </MenuItem>
