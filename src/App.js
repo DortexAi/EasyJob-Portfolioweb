@@ -6,6 +6,8 @@ import Register from "./pages/Register/Register.js";
 import Dashboard from "./pages/Dashboard/Dashboard.js";
 import Navbar from "./components/navbar/Navbar.js";
 import Footer from "./components/footer/Footer.js";
+import Wantjob from "./pages/WantJob/WantJob.js";
+import Space from "./components/Space.js";
 
 const router = createBrowserRouter(
   [
@@ -29,7 +31,7 @@ const router = createBrowserRouter(
     {
       path: "/register",
       element:
-      <>
+      <> 
         <Navbar/>
         <Register />,
         <Footer/>
@@ -43,6 +45,16 @@ const router = createBrowserRouter(
         
       </>
     },
+    {
+      path:"/wantjob",
+      element:
+      <>
+        <Navbar/>
+         <Space height={50}/>
+        <Wantjob/>
+        <Footer/>
+      </>
+    }
    
   ],
   { basename: "/EasyJob-Portfolio" }
@@ -53,6 +65,7 @@ function App() {
     <div>
       <RouterProvider router={router} />
       {/* <Home/> */}
+      {/* <Wantjob/> */}
     </div>
   );
 }
