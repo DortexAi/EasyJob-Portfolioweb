@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/EasyJob-Portfolio/static/css/main.08b4ce81.css",
-    "main.js": "/EasyJob-Portfolio/static/js/main.566d7ee3.js",
+    "main.css": "/EasyJob-Portfolio/static/css/main.a3ea9d33.css",
+    "main.js": "/EasyJob-Portfolio/static/js/main.2127f10f.js",
     "static/js/453.7ade0259.chunk.js": "/EasyJob-Portfolio/static/js/453.7ade0259.chunk.js",
     "static/media/backimage1.jpg": "/EasyJob-Portfolio/static/media/backimage1.cd1920dc0d32d72cd695.jpg",
     "static/media/backimage2.jpg": "/EasyJob-Portfolio/static/media/backimage2.cd1920dc0d32d72cd695.jpg",
+    "static/media/mainCarouselImg-3.jpg": "/EasyJob-Portfolio/static/media/mainCarouselImg-3.b85f8dbceff30970bc41.jpg",
+    "static/media/mainCarouselImg-2.jpg": "/EasyJob-Portfolio/static/media/mainCarouselImg-2.c1294ddf8c5611f61ddd.jpg",
+    "static/media/mainCarouselImg-1.jpg": "/EasyJob-Portfolio/static/media/mainCarouselImg-1.4f92fe85563baf9f34c3.jpg",
+    "static/media/phoneImage.jpeg": "/EasyJob-Portfolio/static/media/phoneImage.8a40a843443b5214ab8a.jpeg",
     "static/media/college-placement-card.png": "/EasyJob-Portfolio/static/media/college-placement-card.e882aa1ff03cf10917f1.png",
     "static/media/job-card.png": "/EasyJob-Portfolio/static/media/job-card.9a6d98ac5b15baffd2ed.png",
     "static/media/fr-card-1.png": "/EasyJob-Portfolio/static/media/fr-card-1.c19cf2e014886dbdf95c.png",
@@ -17,12 +21,12 @@
     "static/media/slick.ttf": "/EasyJob-Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/EasyJob-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EasyJob-Portfolio/index.html",
-    "main.08b4ce81.css.map": "/EasyJob-Portfolio/static/css/main.08b4ce81.css.map",
-    "main.566d7ee3.js.map": "/EasyJob-Portfolio/static/js/main.566d7ee3.js.map",
+    "main.a3ea9d33.css.map": "/EasyJob-Portfolio/static/css/main.a3ea9d33.css.map",
+    "main.2127f10f.js.map": "/EasyJob-Portfolio/static/js/main.2127f10f.js.map",
     "453.7ade0259.chunk.js.map": "/EasyJob-Portfolio/static/js/453.7ade0259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08b4ce81.css",
-    "static/js/main.566d7ee3.js"
+    "static/css/main.a3ea9d33.css",
+    "static/js/main.2127f10f.js"
   ]
 }
