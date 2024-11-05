@@ -1,45 +1,50 @@
-import React from 'react';
-import { Box, Stack, Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import screensImg from '../../assets/images/phoneImage.jpeg'
+import React from "react";
+import { Box, Stack, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import screensImg from "../../assets/images/phoneImage.jpeg";
 
 const Wantjob = () => {
   return (
-    <Box sx={{ width: '100%', backgroundColor: '#E6F0FA', p: 5 }}>
+    <Box sx={{ width: "100%", backgroundColor: "#E6F0FA", p: 2 }}>
       {/* Hero Section */}
       <Stack
-        direction={{ xs: 'column', md: 'row' }}
+        direction={{ xs: "column", md: "row" }}
         spacing={2}
         alignItems="center"
         justifyContent="center"
         sx={{
-          textAlign: 'center',
-          backgroundColor: 'rgba(0, 56, 255, 0.8)',
-          color: 'white',
+          textAlign: "center",
+          backgroundColor: "rgba(0, 56, 255, 0.8)",
+          color: "white",
           py: { xs: 4, md: 6 },
           px: { xs: 2, md: 4 },
-          borderRadius: '8px',
+          borderRadius: "8px",
         }}
       >
         <Box>
-          <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
             Find your dream job here !!
           </Typography>
           <Typography variant="body1" sx={{ my: 2 }}>
-            We assign you workout tasks daily. Complete them and level up your physique!
+          Connecting talent with opportunity, simplifying hiring for success.
           </Typography>
-          <Stack direction="row" spacing={2} justifyContent="center" sx={{ mt: 2 }}>
+          <Stack
+            direction="row"
+            spacing={2}
+            justifyContent="center"
+            sx={{ mt: 2 }}
+          >
             <Button
               variant="contained"
               color="default"
-              sx={{ backgroundColor: 'black', color: 'white' }}
+              sx={{ backgroundColor: "black", color: "white" }}
             >
               Download on the App Store
             </Button>
             <Button
               variant="contained"
               color="default"
-              sx={{ backgroundColor: 'black', color: 'white' }}
+              sx={{ backgroundColor: "black", color: "white" }}
             >
               Get it on Google Play
             </Button>
@@ -52,39 +57,40 @@ const Wantjob = () => {
           src={screensImg}
           alt="Easyjob App Screens"
           sx={{
-            width: { xs: '100%', md: '50%' },
-            maxWidth: '500px',
+            width: { xs: "100%", md: "50%" },
+            maxWidth: "500px",
             mt: { xs: 3, md: 0 },
-            borderRadius:30,
-            boxShadow:10,
+            borderRadius: 30,
+            boxShadow: 10,
           }}
         />
       </Stack>
 
       {/* Information Section */}
       <Stack
-        direction={{ xs: 'column', md: 'row' }}
+        direction={{ xs: "column", md: "row" }}
         spacing={4}
         justifyContent="space-around"
         sx={{ mt: 5 }}
       >
-        <Box textAlign="center" sx={{ maxWidth: '400px' }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#333' }}>
-            Daily challenges to keep you motivated
+        <Box textAlign="center" sx={{ maxWidth: "400px" }}>
+          <Typography variant="h5" sx={{ fontWeight: "bold", color: "#333" }}>
+            Streamlining Your Hiring Process
           </Typography>
           <Typography variant="body2" sx={{ mt: 1 }}>
-            We assign you workout tasks daily. Complete them and level up your physique!
-            If you miss or fail a task, you will be assigned a penalty task next day.
+            companies with the right talent, simplifying the journey from job
+            posting to successful hire.{" "}
           </Typography>
         </Box>
 
-        <Box textAlign="center" sx={{ maxWidth: '400px' }}>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#333' }}>
-            Tutorials of workout to ensure you do it right
+        <Box textAlign="center" sx={{ maxWidth: "400px" }}>
+          <Typography variant="h5" sx={{ fontWeight: "bold", color: "#333" }}>
+            Expert Recruitment Solutions
           </Typography>
           <Typography variant="body2" sx={{ mt: 1 }}>
-            Fit buddy has a wide variety of workout tutorials made by experts, easy to understand.
-            Each tutorial is validated and verified by our fitness experts.
+            Our dedicated team works tirelessly to match employers with top
+            candidates, ensuring a perfect fit for every position and fostering
+            long-term success.{" "}
           </Typography>
         </Box>
       </Stack>

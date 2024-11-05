@@ -33,7 +33,6 @@ const router = createBrowserRouter(
       element:
       <> 
         <Navbar/>
-        <Space height={60}/>
         <Register />,
         <Footer/>
       </>
@@ -51,7 +50,6 @@ const router = createBrowserRouter(
       element:
       <>
         <Navbar/>
-         <Space height={50}/>
         <Wantjob/>
         <Footer/>
       </>

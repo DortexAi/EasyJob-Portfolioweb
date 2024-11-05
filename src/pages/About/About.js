@@ -10,8 +10,8 @@ import { Typography, Container, Box } from "@mui/material";
 // Step 1: Define the data in JSON format
 const aboutData = {
   title: {
-    part1: "ABOUT",
-    part2: "US"
+    part1: "About",
+    part2: "Us"
   },
   description:
     "EasyJob Pvt Ltd is a premier service and product-based company dedicated to revolutionizing the recruitment industry by providing a seamless, results-driven approach to connecting job seekers and employers. Through our innovative platform, we streamline the hiring process by acting as intermediaries, matching top talent with suitable roles and ensuring a smooth, rewarding experience for all parties involved. Our core services include candidate sourcing, thorough screening, strategic matching, and a range of supportive services, from salary negotiations to onboarding. Partnering with EasyJob Pvt Ltd enables companies to benefit from efficient recruitment solutions, while job seekers gain greater access to varied job opportunities.",
@@ -66,7 +66,7 @@ export default function AboutUs() {
     <Box sx={{ minHeight: "100vh" }}>
      
 
-      <Box sx={{ pt: 15 }}>
+      <Box sx={{ pt: 5 }}>
         <Container maxWidth="lg">
           {/* Title */}
           <Typography component="h2" fontWeight="bold" gutterBottom>
