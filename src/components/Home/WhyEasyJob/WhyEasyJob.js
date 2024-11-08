@@ -84,7 +84,7 @@ const WhyEasyJob = () => {
         stopAutoPlayOnHover={true}
         navButtonsAlwaysVisible
         fullHeightHover={false}
-        onChange={(index) => console.log("Slide changed to:", index)}
+        // onChange={(index) => console.log("Slide changed to:", index)}
       >
         {carouselData.map((item, index) => (
           <Box
